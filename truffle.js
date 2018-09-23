@@ -9,7 +9,7 @@
  *     network_id: '1',
  *     gas: 4500000,
  *     gasPrice: 10000000000,
- *   },
+ *   }, 
  */
 
 var HDWalletProvider = require("truffle-hdwallet-provider");
@@ -22,7 +22,8 @@ module.exports = {
       from: "0xA5c287037e727E9f6Ff7a9c7A8B30563D8b5Fe9f", // Defaults to first address from Ganache
       host: "127.0.0.1", 
       port: 7545,
-      network_id: "*"
+      network_id: "*",
+      gas: 7996000
     },
     ropsten: {
       // Make sure the from address you use is entirely lowercase or you will see an error like this: 
